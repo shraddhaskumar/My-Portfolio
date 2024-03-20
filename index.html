@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @media screen and (max-width: 768px) {
+      .menu-icon {
+    cursor: pointer;
+  }
+
+  .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute; /* Position the navbar absolutely */
+    top: 100%; /* Position it below the header */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Occupy full width */
+    background-color: #f9f9f9; /* Optional: Add a background color */
+    border-top: 1px solid #ddd; /* Optional: Add a border */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Optional: Add a box shadow */
+    z-index: 1; /* Ensure it's above other content */
+  }
+
+  .navbar.active {
+    display: flex; /* Display it when active */
+  }
+
+  .navbar a {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%; /* Occupy full width */
+    text-align: center; /* Center the text */
+  }
+
+  .info {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .info h3 {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+  }
+
+  .info h3 span {
+    color: rgb(16, 207, 236);
+  }
+
+  .info h1 {
+    font-size: 23px;
+    color: white;
+  }
+
+  .contact-left {
+    padding: 25px 0;
+    font-size: 12px;
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  .social-icons {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin-right: 15px;
+    font-size: 18px;
+  }
+
+  .ab {
+    font-size: 14px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .im {
+    display: none;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+
+  .tab-links {
+    margin-right: 20px;
+  }
+    }
+
+    @media screen and (max-width: 600px) {
+      .logo {
+        font-size: 25px;
+      }
+
+      .navbar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <div class="menu-icon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="#" onclick="scrollToSection('about')">About</a>
+      <a href="#" onclick="scrollToSection('about')">Skills</a>
+      <a href="#" onclick="scrollToSection('skills')">My Work</a>
+      <a href="#" onclick="scrollToSection('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero-container">
+    <div class="info">
+      <h3>Hey There...It's me!</h3>
+      <h1>Shraddha Sasikumar</h1>
+      <h3>And I'm a <span>Graphic Designer cum Frontend Developer.</span></h3>
+      <br>
+      <p class="ab">
+        A quick learner and an active tech enthusiast experienced in using Adobe Photoshop, Freepik, Canva, Figma, and Behance. Consistently working on enhancing my problem-solving, web development, competitive programming, and debugging skills.
+      </p>
+    </div>
+    <div class="im"><img src="profile.png"></div>
+    <br>
+  </div>
+
+  <div class="running-line-container">
+    <div class="running-line">
+      <p>******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ********
+        ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ********
+        ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ******** ********
+      </p>
+    </div>
+  </div>
+  <br><br><br><br>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="image.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-heading">About Me</h1>
+          <p>
+            A second-year passionate BTech undergrad atudent at MACE.
+            Loves working on graphic designing and web-dev projects. 
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+            <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+            <p class="tab-links" onclick="opentab('education', event)">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+              <li><span>Web Development</span><br>Using HTML, CSS & JS</li>
+              <li><span>Graphic Designing</span><br>Designing posters, logos, brochures.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Designer</span><br>At IEEE MACE SB</li>
+              <li><span>Design Lead</span><br>At SPARC- IEEE event</li>
+              <li><span>ComSoc Secretary</span><br>At IEEE MACE SB</li>
+              <li><span>Creative Team member</span><br>At AISA MACE</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022-2026</span><br>BTech in Computer Science and Engineering at Mar Athanasius College Of Engineering.</li>
+              <li><span>2020-2022</span><br>AISSCE at Vikhe Patil Memorial School.</li>
+              <li><span>2018-2020</span><br>AISSE at City International School.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-heading">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <div class="layer"></div>
+          <img src="mywork1.jpeg">
+        </div>
+        <div class="work">
+          <div class="layer"></div>
+          <img src="mywork2.jpeg">
+        </div>
+        <div class="work">
+          <div class="layer"></div>
+          <img src="mywork3.png">
+        </div>
+        <div class="work">
+          <div class="layer"></div>
+          <img src="mywork4.png">
+        </div>
+      </div>
+      <a href="https://drive.google.com/drive/folders/1dRWDISOX-XxljiD1E8j60lujdj5uknrH?usp=sharing" class="btn">See More</a>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>shraddhaskumar04@gmail.com</p>
+          <p>+91 8767785835</p>
+          <div class="social-icons">
+            <a href="https://github.com/shraddhaskumar/" class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/shraddha-sasikumar-730940267/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/shraddhasasikumar/" class="fa fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+  
+    function opentab(tabname, event) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.menu-icon').addEventListener('click', function() {
+    console.log('Hamburger button clicked');
+    document.querySelector('.navbar').classList.toggle('active');
+  });
+});
+  </script>
+ 
+  </body>
+  </html>
+  
